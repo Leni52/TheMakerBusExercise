@@ -1,0 +1,199 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{264FA413-07EB-41E5-9E73-09C9780D01C8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MakerBusExercise</RootNamespace>
+    <AssemblyName>MakerBusExercise</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44324</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="Web.config" />
+    <Content Include="wwwroot\css\style.css" />
+    <Content Include="wwwroot\lib\jquery\jquery.js" />
+    <Content Include="wwwroot\lib\jquery\jquery.min.js" />
+    <Content Include="wwwroot\lib\jquery\jquery.slim.js" />
+    <Content Include="wwwroot\lib\jquery\jquery.slim.min.js" />
+    <Content Include="wwwroot\navigation.html" />
+    <Content Include="wwwroot\timetable.html" />
+    <Content Include="wwwroot\toys.html" />
+    <Content Include="wwwroot\img\home1.jpg" />
+    <Content Include="wwwroot\img\home2.jpg" />
+    <Content Include="wwwroot\img\home3.jpg" />
+    <Content Include="wwwroot\img\maker-logo.png" />
+    <Content Include="wwwroot\img\map-ca.png" />
+    <Content Include="wwwroot\img\map-ny.png" />
+    <Content Include="wwwroot\img\map-tx.png" />
+    <Content Include="wwwroot\img\toys1.jpg" />
+    <Content Include="wwwroot\img\toys2.jpg" />
+    <Content Include="wwwroot\index.html" />
+    <Content Include="wwwroot\js\script.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\bootstrap-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\bootstrap-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\bootstrap-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\bootstrap-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\alert-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\alert-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\alert-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\alert-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\button-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\button-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\button-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\button-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\carousel-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\carousel-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\carousel-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\carousel-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\collapse-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\collapse-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\collapse-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\collapse-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\dropdown-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\dropdown-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\dropdown-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\dropdown-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\modal-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\modal-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\modal-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\modal-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\popover-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\popover-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\popover-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\popover-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\scrollspy-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\scrollspy-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\scrollspy-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\scrollspy-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\tab-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\tab-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\tab-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\tab-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\toast-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\toast-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\toast-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\toast-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\tooltip-native.esm.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\tooltip-native.esm.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\tooltip-native.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\components\tooltip-native.min.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\polyfill.js" />
+    <Content Include="wwwroot\lib\bootstrap.native\polyfill.min.js" />
+    <Content Include="wwwroot\route.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="libman.json" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="wwwroot\example.json" />
+    <Content Include="wwwroot\detail.json" />
+    <Content Include="wwwroot\lib\jquery\jquery.min.map" />
+    <Content Include="wwwroot\lib\jquery\jquery.slim.min.map" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51068</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44324/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
